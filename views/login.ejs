@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="hero">
+        <h2>Login as a Current User</h2>
+            <form action="/api/login" class="formE" id="formLog" method="post">
+            <label  class="" for="username">Username</label>
+            <input name="username" class="sB" type="text" min="5" id="usernameLogin">
+            <label  class="" for="password">Password</label>
+            <input  name="password" class="sB" type="password" min="6" id="passwordLogin"> 
+            <input type="submit" value="Login">
+        </form>
+        <a href="/signup">Signup</a>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>

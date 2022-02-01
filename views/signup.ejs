@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Sign up </title>
+</head>
+<body>
+    <div class="hero">
+        <h2>Sign up as a New User</h2>
+            <form action="/api/signup" class="formE" method="post">
+            <label for="email">Email</label>
+            <input name="email" type="email" class="sB" id="emailS">
+            <label  class="" for="username">Username</label>
+            <input name="username" placeholder="minimum 5 char" class="sB" type="text" min="5" id="usernameS">
+            <label  class="" for="passoword">Password</label>
+            <input name="password" placeholder="minimum 6 char" class="sB" type="password" min="6" id="passwordS"> 
+            <input type="submit" value="submit" placeholder="submit">
+        </form>
+        <a href="/login">Login</a>
+    </div>
+</body>
+</html>

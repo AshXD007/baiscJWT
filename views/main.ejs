@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>UserData</title>
+</head>
+<body>
+    <div class="mHero">
+        <h2>Hey Ashad</h2>
+        <h4>Submit your data </h4>
+        <form action="/api/submit-data" method="post">
+            <label class="mL" for="fullName">Your Name</label>
+            <input name="fullName" type="text" class="sB">
+            <label class="mL" for="work">Work</label>
+            <select name="workAt" id="">
+                <option value="none">none</option>
+                <option value="jobless">Jobless</option>
+                <option value="businessman">Entreuprenuer whatever the spelling is</option>
+            </select>
+            <label class="mL" for="netWorth">Networth</label>
+            <select name="networth" id="">
+                <option value="none">... </option>
+                <option value="broke">broke</option>
+            </select>
+            <label class="mL" for="momName">Your Mum's Name?</label>
+            <input name="mumName" type="text" class="sB">
+            <label class="mL" for="sheIsA">she's A</label>
+            <select name="mumA" id="">
+                <option value="">....</option>
+                <option value="hoe">Hoe</option>
+                <option value="gae">Gay</option>
+            </select>
+            <label class="mL" for="dadName">Your dad?</label>
+            <select name="dadA" id="">
+                <option value="none">..</option>
+                <option value="ashad">ashad</option>
+            </select>
+            <label class="mL" for="rickRoll"><a id="rick" target="_blank" href="https://youtu.be/QtBDL8EiNZo">Click here to watch the video</a></label>
+            <input type="text" class="sB" placeholder="suggestions on the video">
+            <input type="submit" value="Submit" id="dataSubmit">
+        </form>
+        <button id="downloadData" >Download Data</button>
+    </div>
+    <script>
+        const rickElem = document.getElementById('rick');
+        rickElem.addEventListener('click',()=>{
+            document.cookie = "rickRoll=true";
+        })
+
+        document.getElementById("downloadData").addEventListener('click',()=>{
+            window.location.href=("/api/get-data")
+        })
+
+    </script>
+</body>
+</html>
